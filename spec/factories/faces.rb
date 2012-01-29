@@ -2,8 +2,8 @@
 
 FactoryGirl.define do
   factory :face do
-    user nil
-    date "2012-01-29"
+    association :user
+    date Date.today
     status 1
   end
 end
