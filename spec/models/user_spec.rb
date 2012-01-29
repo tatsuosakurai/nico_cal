@@ -1,5 +1,8 @@
 require 'spec_helper'
 
 describe User do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe 'validate' do
+    it { should validate_presence_of :name }
+    it { should ensure_inclusion_of(:name).in_range(3..64) }
+  end
 end
