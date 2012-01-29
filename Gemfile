@@ -36,3 +36,17 @@ end
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+group :test, :development  do
+	gem 'rspec-rails'
+	gem "shoulda-matchers", ">=1.0.0"
+	gem 'capybara'
+	gem 'capybara-webkit'
+	gem "database_cleaner", "~> 0.7.1"
+
+	gem "jasmine"
+	gem "jasminerice"
+	gem 'jasmine-headless-webkit', '~>0.8.4'
+
+	gem 'factory_girl_rails'
+end
